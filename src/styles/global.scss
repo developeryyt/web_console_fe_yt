@@ -1,0 +1,20 @@
+@use "variables" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: $color-text;
+  background-color: $color-bg;
+}
+
+.container {
+  width: 100%;
+
+  .inner {
+    margin: 0 auto;
+    padding: $spacing-unit * 2;
+  }
+}
