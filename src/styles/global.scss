@@ -1,20 +1,50 @@
 @use "variables" as *;
 
+
 * {
-  box-sizing: border-box;
+  box-sizing: $border-box;
+  margin: $num0;
+  padding: $num0;
+}
+
+html,body {
+  height: $full;
 }
 
 body {
   margin: 0;
-  color: $color-text;
-  background-color: $color-bg;
+  background-color: $color-white;
+  color: $color-dark-text;
 }
 
+body.dark {
+  background-color: $color-black;
+  color: $color-light-text;
+}
+
+#root {
+  height: $full;
+}
+
+.app {
+ height: $inherit;
+}
+
+.header_wrap {
+
+  header {
+    border-bottom: 1px solid white;
+  }
+
+}
+
+
+
 .container {
-  width: 100%;
+  width: $full;
 
   .inner {
-    margin: 0 auto;
-    padding: $spacing-unit * 2;
+    margin: $auto;
   }
+
 }

@@ -1,7 +1,7 @@
-import type {ButtonProps} from "../../type";
+import type {CommonProps} from "../../type";
 
 
-const FeButton = ({ onClick,  children, className}: ButtonProps) => {
+const FeButton = ({ onClick,  children, className}: CommonProps) => {
 
     return (
         <button onClick={onClick} className={className}>{children}</button>

@@ -1,8 +1,10 @@
 const Footer = () => {
     return (
-        <footer>
+        <div className="footer_wrap">
+            <footer>
 
-        </footer>
+            </footer>
+        </div>
     );
 };
 
