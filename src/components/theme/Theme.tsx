@@ -1,5 +1,5 @@
 import FeButton from "../button/FeButton.tsx";
-import {LightbulbIcon, MoonIcon} from "lucide-react";
+import {LightbulbIcon, MoonIcon, Lamp} from "lucide-react";
 import {useCallback, useEffect, useState} from "react";
 
 
@@ -7,7 +7,7 @@ import {useCallback, useEffect, useState} from "react";
 
 const Theme = () => {
 
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState<string>("light");
 
     /*
     * 클로저 vs react의 상태 관리 차이 이해
@@ -23,13 +23,12 @@ const Theme = () => {
             document.body.classList.add(newTheme);
             return newTheme;
         })
-
     },[])
 
     return (
-        <FeButton onClick={themeHandler} className={"btn btn_theme"}>
-            {/*<LightbulbIcon></LightbulbIcon>*/}
-            <MoonIcon></MoonIcon>
+        <FeButton onClick={themeHandler} className={"btn_theme"}>
+            {theme === 'light' && <Lamp></Lamp>}
+            {theme === 'dark' && <MoonIcon fill={'#fff'}></MoonIcon>}
         </FeButton>
     );
 };
