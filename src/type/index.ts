@@ -8,6 +8,18 @@ export interface CommonProps {
     children?: React.ReactNode;
 }
 
+export type ChildNodes = Pick<CommonProps, 'children'>
+
+export interface FormProps {
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    type: string;
+    value: string | number;
+    placeholder?: string;
+    name: string;
+}
+
+export type LabelProps = { text: string };
+
 
 type Status = 'loading' | 'success' | 'Error';
 type ID = string | number;

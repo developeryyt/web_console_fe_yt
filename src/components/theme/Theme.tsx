@@ -1,8 +1,6 @@
 import FeButton from "../button/FeButton.tsx";
-import {LightbulbIcon, MoonIcon, Lamp} from "lucide-react";
-import {useCallback, useEffect, useState} from "react";
-
-
+import {Lamp, MoonIcon} from "lucide-react";
+import {useCallback, useState} from "react";
 
 
 const Theme = () => {

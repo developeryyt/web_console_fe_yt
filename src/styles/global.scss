@@ -68,6 +68,23 @@ body.dark {
 
 }
 
+.header_wrap {
+  z-index: 99;
+  position: fixed;
+  width: $full;
+  left: 0;
+  top:0;
+}
+
+.aside_wrap {
+  position: fixed;
+  right: 0;
+  top: 60px;
+  bottom: 0;
+  z-index: 99;
+}
+
+
 
 
 .container {

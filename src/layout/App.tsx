@@ -2,6 +2,7 @@ import Header from "./header";
 import Container from "./container";
 import Footer from "./footer";
 import Nav from "./nav";
+import Aside from "./aside";
 
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
         <div className='app'>
             <Header />
             <Nav />
+            <Aside />
             <Container>
                 <></>
             </Container>
