@@ -27,8 +27,6 @@ import type {Equal, Expect} from "../../utils/type_helper.ts";
 
     type Bottom = "jeans" | "skirt" | "slacks";
 
-
-
     type Outfit = `${Top} with ${Bottom}`
 
     type tests = [
