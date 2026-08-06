@@ -15,6 +15,13 @@ button {
   box-sizing: $border-box;
 }
 
+input {
+  border: 0;
+  box-sizing: $border-box;
+}
+
+
+
 /* INIT */
 button {
   display: inline-block;
@@ -32,6 +39,33 @@ button {
   text-align: center;
 }
 
+.ipt {
+  width: $full;
+  min-height: $num34;
+  padding: $num0 $num8;
+  border-radius: $num2;
+  _border-bottom: 2px solid #2830d3;
+  background-color: #000;
+  color: #fff;
+  font-size: $num14;
+
+  &::placeholder {
+    color: #e1e0dd;
+  }
+}
+
+label {
+  display: inline-block;
+  width: $full;
+  font-weight: bold;
+  font-size: $num20;
+}
+
+
+/*
+*
+*
+*/
 
 html,body {
   height: $full;
@@ -46,6 +80,14 @@ body {
 body.dark {
   background-color: $color-black;
   color: $color-light-text;
+
+  .header_wrap {
+    border-color: $color-white;
+  }
+
+  .aside_wrap {
+    border-color: $color-white;
+  }
 }
 
 #root {
@@ -58,7 +100,7 @@ body.dark {
 
 .header_wrap {
   padding: $num10;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid $color-black;
 
   header {
     display: flex;
@@ -84,7 +126,15 @@ body.dark {
   z-index: 99;
 }
 
+.aside_wrap {
+  border-left: 1px solid $color-black;
+}
 
+.aside_wrap {
+  aside {
+    padding: $num14;
+  }
+}
 
 
 .container {
@@ -94,6 +144,13 @@ body.dark {
     margin: $auto;
   }
 
+}
+
+
+.input_wrap {
+  label {
+    margin-bottom: 6px;
+  }
 }
 
 
