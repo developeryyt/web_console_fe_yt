@@ -1,5 +1,5 @@
 @use "variables" as *;
-
+@use "helper" as *;
 
 /* RESET */
 
@@ -154,3 +154,7 @@ body.dark {
 }
 
 
+.btn_test_connect {
+  color: red;
+  text-decoration: underline;
+}
