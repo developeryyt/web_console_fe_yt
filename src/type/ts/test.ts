@@ -9,11 +9,20 @@ import type {Equal, Expect} from "../../utils/type_helper.ts";
         hello: 'world',
         hello2: 'world2',
         hello3: 'world3',
+    } as const;
+
+    type TestingValue = typeof obj[keyof typeof obj];
+    type Keys = keyof typeof obj;
+
+    type B = {
+        [K in TestingValue] : K;
+    }
+
+    type C = {
+        [T in Keys] : T
     };
 
-    type TestingFramework = keyof typeof obj;
-
-    type tests = [Expect<Equal<TestingFramework, "hello" | "hello2" | "hello3">>];
+    // type tests = [Expect<Equal<TestingFramework, "hello" | "hello2" | "hello3">>];
 
 }
 {
